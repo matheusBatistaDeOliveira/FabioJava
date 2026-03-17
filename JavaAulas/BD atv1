@@ -1,0 +1,33 @@
+create table servico(ser_cod INTEGER AUTO_INCREMENT NOT NULL, ser_tipo varchar(30) NOT NULL, ser_valor float NOT NULL, PRIMARY KEY(ser_cod));
+
+
+CREATE TABLE CLIENTE(
+cli_cpf BIGINT(30) NOT NULL,
+cli_nome varchar(50) NOT NULL,
+cli_tel BIGINT(16) NOT NULL,
+cli_email varchar(30) NOT NULL,
+cli_endereco varchar(90) NOT NULL,
+PRIMARY KEY(cli_cpf, cli_nome)
+);
+
+
+CREATE TABLE produto(
+prod_cod BIGINT(20) NOT NULL,
+prod_nome varchar(30) NOT NULL,
+prod_valor float NOT NULL,
+prod_loc varchar(30) NOT NULL,
+prod_quant INTEGER(4) NOT NULL,
+prod_val date,
+PRIMARY KEY(prod_cod, prod_nome)
+);
+
+
+CREATE TABLE AGENDAMENTO(age_cod INTEGER AUTO_INCREMENT NOT NULL, age_data date NOT NULL, age_hora time NOT NULL, age_ser_cod INTEGER NOT NULL, age_cli_cpf INTEGER NOT NULL, age_prod_cod INTEGER, age_status varchar(10), age_total float, age_fpagamento varchar(10), age_parcelas INTEGER(1), PRIMARY KEY(age_cod));
+
+
+//Insert
+
+INSERT INTO produto VALUES
+(0123456678, 'José das couves', 1220.90, 'corredor a23', 678, 20260316),
+(0123456679, 'Matheus Batista', 1200.90, 'corredor a25', 878, 20260317),
+(0123456643, 'Richard Cristofer', 2500, 'corredor b1', 478, 20260217);
