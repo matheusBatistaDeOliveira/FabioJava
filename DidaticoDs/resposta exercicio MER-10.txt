@@ -1,0 +1,25 @@
+OBJETIVO  : informatizar agendamentos (Criar Sistema)
+
+
+MÉDICO - crm*, nome, celular, especialidade, turno, email 
+
+PACIENTE - cpf*, nome , tipo de atendimento , convenio , cod convenio , ddn , cel , cel2, telefone, email 
+
+AGENDAMENTO - cpf* cliente, crm* medico, horario, data , observação
+
+
+REQUISITO FUNCIONAL
+- REALIZAR AGENDAMENTOS
+- GERENCIAR INFORMAÇÕES DO MÉDICO
+- GERENCIAR INFORMAÇÕE DO PACIENTE
+
+REQUISITO NÃO FUNCIONAL
+- EMITIR GUIA PARA MEDICAMENTO CONTROLADO
+- ATESTADO DE ACOMPANHANTE E AFASTAMENTO
+- REALIZAR BACKUP DA BASE DE DADOS AUTOMATICAMENTE.
+- RESPONSABILIDADE PELA INFRAESTRUTUTA(
+CELULAR / COMPUTADOR / INTERNET / SERVIDOR)
+
+
+
+
