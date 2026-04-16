@@ -1,0 +1,45 @@
+/*
+// JOptionPane
+
+// O JOptionPane é uma classe da biblioteca Swing do Java que fornece uma maneira fácil de criar caixas de diálogo
+// para entrada e exibição de mensagens INPUT e OUTPUT.
+
+//Não funciona dentro do Package de um projeto com outro main, por causa da sintaxe da biblioteca JOptionPane.
+// para funcionar tem que ser o único main do projeto, ou seja, tem que ser o único arquivo .java com a função main() no projeto.
+*/
+
+    /*
+    EXEMPLO DE ENTRADA
+    String x = JOptionPane.showInputDialog(null,"Digite o seu nome","Cadastro de Cliente",3);
+
+    EXEMPLO DE SAÍDA
+    JOptionPane.showMessageDialog(null,"O nome armazenado é " + x);
+    */
+
+    /*
+    CONVERSÃO DE INTEIRO
+    x = JOptionPane.showInputDialog(null, "Digite a nota 1");
+    n1 = Integer.parseInt(x);
+ 
+ 
+    CONVERSÃO PARA DOUBLE 
+    x = JOptionPane.showInputDialog(null, "Digite a nota 1");
+    n1 = Double.parseDouble(x);
+    */
+    
+    /*
+      EXEMPLO DE UTILIZAÇÃO 
+    
+      int n1 , n2, n3;
+      double media;
+      String x ;
+    
+      x = JOptionPane.showInputDialog(null, "Digite a nota 1");
+      n1 = Integer.parseInt(x);
+      x = JOptionPane.showInputDialog(null, "Digite a nota 2");
+      n2 = Integer.parseInt(x);
+      x = JOptionPane.showInputDialog(null, "Digite a nota 3");
+      n3 = Integer.parseInt(x);
+      media = (n1 + n2 +n3) / 3;
+      JOptionPane.showMessageDialog(null,"A média do aluno é " + media);  
+    */
