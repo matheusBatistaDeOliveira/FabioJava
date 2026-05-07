@@ -1,0 +1,15 @@
+em propriedades da janela que aparece
+
+PROPRIEDADES
+undecoreted - habilitar esta opção
+
+CÓDIGO
+politica de tamanho de Form - marcar a opção: Gerar Código de redimensionamento
+gerar tamanho e o de baixo - habilitar estas duas opções
+
+
+
+
+BOTAO DIREITO
+definir layout>layout nulo
+a identação automática sai
