@@ -1,0 +1,61 @@
+------------------------------------------------------------------------
+FOREIGN KEY
+Chave Estrangeira
+----
+Atributos:
+FOREIGN KEY (Coluna que referencia a outra tabela)
+REFERENCES tabelaReferencia(Coluna Referenciada)
+
+--
+
+EXEMPLO TEÓRICO - FOREIGN KEY
+
+FOREIGN KEY (colunaIdDestaTabela)
+REFERENCES tabelaReferencia(colunaIdReferencia)
+
+
+EXEMPLO PRÁTICO - FOREIGN KEY
+
+CREATE TABLE usuarios(
+nomeID INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(100)
+);
+
+CREATE TABLE entregas(
+sendlyID INT PRIMARY KEY AUTO_INCREMENT,
+sendly VARCHAR(50),
+nomeID INT,
+
+FOREIGN KEY (nomeID) 
+REFERENCES usuarios(usuarioID)
+);
+
+-----------------------
+FOREIGN KEY (nomeID) 
+O MySQL entende:
+
+“O campo nomeID da tabela pedido será uma chave estrangeira”
+
+
+obs: Esse campo irá receber valores vindos da tabela usuarios
+(da coluna usuarioID)
+
+-----------------------
+REFERENCES usuarios(usuarioID)
+Significa:
+
+“O valor inserido em entregas.nomeID deve existir em usuarios.usuarioID”
+
+-----------------------
+Significa que isto
+(com NOT NULL na Referência)
+
+INSERT INTO usuarios(nome) VALUES('Jamanta'),('Jessica'),('Gabriela');
+
+INSERT INTO entregas(usuarioID, sendly) VALUES(1, 'computador'),(1, 'mouse');
+
+
+Será permitido, e quando não existir usuarioID linha alguma de entregas exista. 
+Pois só podem existir entregas quando ligadas a um usuarioID.
+
+------------------------------------------------------------------------
